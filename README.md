@@ -9,7 +9,7 @@ Very powerfull & dangerou WhatsApp Bug 🐛 bot.
 
    1. - 🎭 `Star` 🌟 this repository.
 - If you don't have a GitHub account, [sign up](https://github.com/join) now. [video Tutorial](https://youtu.be/D9ep0hVF8-c?si=Rn0D1E5-VErXKlap)
-2.  - [FORK](https://github.com/techgod143/TECH-GOD-BUG-BOT/fork) this repository.
+2.  - [FORK](https://github.com/gidiowis/Tennor-bugs/edit/master/README.md#youtube-channel-link-) this repository.
 3.   - Click [SCAN](https://replit.com/@DGXeon/Xeon-PairCode?v=1) and pair the code through the "WhatsApp Linked Devices" option in your WhatsApp app.
 
 4.   - If you don't have an account of heroku [create an account now](https://youtu.be/MFA2p4-BviQ?si=PYVzRn6wnpE4_0Im)
@@ -34,10 +34,10 @@ Very powerfull & dangerou WhatsApp Bug 🐛 bot.
 #  important 👇 for you
 
 <div align="center">
-<a href="https://www.instagram.com/techgod143/"><img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=G0B1&center=true&width=910&height=100&lines=Don't+Forget+To+Subscribe;my+YouTube+Channel;PROGRAM+By+TECH+GOD" alt="Typing SVG" /></a>
+<a https:"//www.instagram.com/giddy_owis_?igsh=YzZ0NDRoaXFxM2Zk" src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=G0B1&center=true&width=910&height=100&lines=Don't+Forget+To+Subscribe;my+YouTube+Channel;PROGRAM+By+Giddy+Tennor" alt="Typing SVG" /></a>
   
 # YouTube channel link 👇 
-   [`More hacks & tutorials`](youtube.com/@techgod143)
+   [`More hacks & tutorials`](https://youtube.com/@gideonowino-gc2ry?si=kCunP35zj95-_hup)
 
 # contact to owner 👇    
 <a aria-label="Join our chats" href="https://wa.me/254703726139?text=Hi!! `Giddy Tennor` Sir, I need Your Help" target="_blank">
