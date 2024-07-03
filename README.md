@@ -34,7 +34,7 @@ Very powerfull & dangerou WhatsApp Bug 🐛 bot.
 #  important 👇 for you
 
 <div align="center">
-<a https:"//www.instagram.com/giddy_owis_?igsh=YzZ0NDRoaXFxM2Zk" src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=G0B1&center=true&width=910&height=100&lines=Don't+Forget+To+Subscribe;my+YouTube+Channel;PROGRAM+By+Giddy+Tennor" alt="Typing SVG" /></a>
+<a https:"https://www.instagram.com/giddy_owis_?igsh=YzZ0NDRoaXFxM2Zk" src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=G0B1&center=true&width=910&height=100&lines=Don't+Forget+To+Subscribe;my+YouTube+Channel;PROGRAM+By+Giddy+Tennor" alt="Typing SVG" /></a>
   
 # YouTube channel link 👇 
    [`More hacks & tutorials`](https://youtube.com/@gideonowino-gc2ry?si=kCunP35zj95-_hup)
