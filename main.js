@@ -1,10 +1,10 @@
-//base by Tech-God
+//base by Giddy Tennor 
 //re-upload? recode? copy code? give credit ya :)
-//YouTube: @techgod143
-//Instagram: techgod143
-//Telegram: t.me/techgod143
-//GitHub: @techgod143
-//WhatsApp: +917466008456
+//YouTube: @gideon owino
+//Instagram: gidiowis
+//Telegram: Giddy Tennor 
+//GitHub: @gidiowis
+//WhatsApp: +254703726139
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@techgod143
 
 require('./settings')
@@ -32,7 +32,7 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "911234567890"
+let phoneNumber = "254703726139"
 let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -82,14 +82,14 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +254703726139 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +254703726139")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +254703726139 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -112,7 +112,7 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
             if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
             if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
             const m = smsg(XeonBotInc, mek, store)
-            require("./XeonBug5")(XeonBotInc, m, chatUpdate, store)
+            require("./Tennor Bug5")(XeonBotInc, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
@@ -152,35 +152,35 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
         let v
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
-            if (!(v.name || v.subject)) v = XeonBotInc.groupMetadata(id) || {}
+            if (!(v.name || v.subject)) v = Tennor BotInc.groupMetadata(id) || {}
             resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
         })
         else v = id === '0@s.whatsapp.net' ? {
                 id,
                 name: 'WhatsApp'
-            } : id === XeonBotInc.decodeJid(XeonBotInc.user.id) ?
-            XeonBotInc.user :
+            } : id === Tennor BotInc.decodeJid(Tennor BotInc.user.id) ?
+            Tennor BotInc.user :
             (store.contacts[id] || {})
         return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
     
-    XeonBotInc.public = true
+    TennorBotInc.public = true
 
-    XeonBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
+    TennorBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
 
-XeonBotInc.ev.on("connection.update",async  (s) => {
+TennorBotInc.ev.on("connection.update",async  (s) => {
         const { connection, lastDisconnect } = s
         if (connection == "open") {
         	console.log(chalk.magenta(` `))
-            console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2)))
+            console.log(chalk.yellow(`🌿Connected to => ` + JSON.stringify(Tennor BotInc.user, null, 2)))
 			await delay(1999)
             console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
-	        console.log(chalk.magenta(`\n${themeemoji} YT CHANNEL: Tech God`))
-            console.log(chalk.magenta(`${themeemoji} GITHUB: techgod143`))
-            console.log(chalk.magenta(`${themeemoji} INSTAGRAM: @techgod143 `))
+	        console.log(chalk.magenta(`\n${themeemoji} YT CHANNEL: gideon owino`))
+            console.log(chalk.magenta(`${themeemoji} GITHUB: gidiowis`))
+            console.log(chalk.magenta(`${themeemoji} INSTAGRAM: @gidiowis`))
             console.log(chalk.magenta(`${themeemoji} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${themeemoji} CREDIT: tech god sir`))
+            console.log(chalk.magenta(`${themeemoji} CREDIT: Giddy Tennor`))
         }
         if (
             connection === "close" &&
@@ -188,27 +188,27 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
             lastDisconnect.error &&
             lastDisconnect.error.output.statusCode != 401
         ) {
-            startXeonBotInc()
+            startTennorBotInc()
         }
     })
     XeonBotInc.ev.on('creds.update', saveCreds)
     XeonBotInc.ev.on("messages.upsert",  () => { })
 
-    XeonBotInc.sendText = (jid, text, quoted = '', options) => XeonBotInc.sendMessage(jid, {
+    XeonBotInc.sendText = (jid, text, quoted = '', options) => TennorBotInc.sendMessage(jid, {
         text: text,
         ...options
     }, {
         quoted,
         ...options
     })
-    XeonBotInc.sendTextWithMentions = async (jid, text, quoted, options = {}) => XeonBotInc.sendMessage(jid, {
+    TennorBotInc.sendTextWithMentions = async (jid, text, quoted, options = {}) => TennorBotInc.sendMessage(jid, {
         text: text,
         mentions: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net'),
         ...options
     }, {
         quoted
     })
-    XeonBotInc.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
+    TennorBotInc.sendImageAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,` [1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         let buffer
         if (options && (options.packname || options.author)) {
@@ -217,7 +217,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
             buffer = await imageToWebp(buff)
         }
 
-        await XeonBotInc.sendMessage(jid, {
+        await TennorBotInc.sendMessage(jid, {
             sticker: {
                 url: buffer
             },
@@ -227,7 +227,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
         })
         return buffer
     }
-    XeonBotInc.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
+    TennorBotInc.sendVideoAsSticker = async (jid, path, quoted, options = {}) => {
         let buff = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,` [1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         let buffer
         if (options && (options.packname || options.author)) {
@@ -236,7 +236,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
             buffer = await videoToWebp(buff)
         }
 
-        await XeonBotInc.sendMessage(jid, {
+        await TennorBotInc.sendMessage(jid, {
             sticker: {
                 url: buffer
             },
@@ -246,7 +246,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
         })
         return buffer
     }
-    XeonBotInc.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
+    TennorBotInc.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
         let quoted = message.msg ? message.msg : message
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
@@ -262,7 +262,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
         return trueFileName
     }
 
-    XeonBotInc.downloadMediaMessage = async (message) => {
+    TennorBotInc.downloadMediaMessage = async (message) => {
         let mime = (message.msg || message).mimetype || ''
         let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
         const stream = await downloadContentFromMessage(message, messageType)
@@ -274,7 +274,7 @@ XeonBotInc.ev.on("connection.update",async  (s) => {
         return buffer
     }
     }
-return startXeonBotInc()
+return startTennorBotInc()
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
